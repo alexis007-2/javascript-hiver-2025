@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise 1</title>
+</head>
+<body>
+
+    <!-- 
+    Exercice 1: Variable
+1)Créez trois variables nom, prenom et lieu de naissance.
+Donnez leur des valeurs au choix
+Les affichez sous forme concaténation classique et Template literals (Template strings)
+Exemple : Je m’ appelle BROU Alexis et je suis né à Paris
+2)Créez deux variable numberOfCats et numberOfDogs dont la valeur est 4 et 2 et les
+Exemple : Il y a 4 chats et 2 chiens
+    -->
+    <script>
+        let prenom = "Christian";
+        let nom = "Schiefner";
+        let ville = "Berlin";
+        let phrase = `Je m'appelle ${prenom} ${nom} et je suis née a ${ville}.`;
+        console.log(phrase);
+
+        let numberOfDogs = 4;
+        let numberOfCats = 2;
+        let phrase2 = `Il y a ${numberOfDogs} chiens et ${numberOfCats} chats.`;
+        console.log(phrase2);
+    </script>
+</body>
+</html>
