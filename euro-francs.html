@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function euroFrancs(montant)
+        {
+            return montant*6.55957;
+        }
+        let res = parseFloat(prompt('Entrez un montant en euro'));
+        let convert = euroFrancs(res);
+        document.body.innerHTML=convert;
+    </script>
+</body>
+</html>

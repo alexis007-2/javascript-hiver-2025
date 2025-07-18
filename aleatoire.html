@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aleatoire(a,b){
+            let res = Math.random()*(a-b)+b;
+            return res;
+        }
+        let a = parseInt(prompt('Entrez le premier nombre'));
+        let b = parseInt(prompt('Entrez le deuxième nombre'));
+        let alea = aleatoire(a,b);
+        document.body.innerHTML = Math.floor(alea);
+    </script>
+</body>
+</html>
