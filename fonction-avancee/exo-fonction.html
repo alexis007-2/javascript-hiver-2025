@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        let multiplication = function(a,b){
+            return a*b;
+        }
+        console.log(multiplication(12,8));
+        //2
+        setTimeout(function(){
+            console.log('salut')
+        },3000);
+
+        //3
+        let cube =x=>x*x*x;
+        console.log(cube(3));
+
+        //4
+        let prenom = prompt('Votre prénom?');
+        let saluer =()=>console.log(`salut, ${prenom}`)
+        saluer();
+
+        //5
+        let estPair = x => (x%2===0)?true:false;
+        console.log(estPair(10));
+        console.log(estPair(13));
+
+        //6
+        let euroFranc= montant=>montant*6.55957;
+        console.log(euroFranc(15));
+        console.log(euroFranc(500));
+    </script>
+</body>
+</html>
