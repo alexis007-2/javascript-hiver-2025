@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let t = [7,5,10,7,85,7,52];
+        // Compter le nombre d'element egale à 7
+        let s = 0;
+        for(let i = 0;i<t.length;i++){
+            if(t[i]===7){
+                s = s+1;
+            }
+        }
+        console.log(`il y a ${s} nombre 7 `);
+
+        // Calcule de la moyenne du tableau
+        let s1 = 0;
+        for(let i = 0;i<t.length;i++){
+            s1 = s1+t[i];
+        }
+        let m = s1/t.length;
+          console.log(`la moyenne est ${m} `);
+    </script>
+</body>
+</html>

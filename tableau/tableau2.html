@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let ville = ['Arles','Marseille','Toulon','Cannes','Antibes'];
+        // Ajouter Nice a la fin du tableau
+
+        ville.push('Nice');
+        ville.push('Monaco');
+        //Enlever Monaco le dernier element
+        ville.pop();
+        //Enlever Arles le premier élément
+        ville.shift();
+
+        // Ajouter au début montpellier
+        ville.unshift('Montpellier');
+        // Position d'une ville
+        console.log(`position de toulon : ${ville.indexOf('Toulon')}`)
+        // existance d'une ville
+        console.log('existance ville');
+        console.log(ville.includes('Juan les pins'));
+
+        // trie de tableau
+        //console.log(ville.sort());
+        console.log(ville);
+
+        // Ajouter Bandol entre Marseille et Toulon
+        ville.splice(2,0,'Bandol');
+        console.log(ville);
+        // Transformer une chaine en tableau
+        let club = 'PSG,OM,Paris FC,OL,Lens';
+        console.log(club.split(','));
+    </script>
+</body>
+</html>

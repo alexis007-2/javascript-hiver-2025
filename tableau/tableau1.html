@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let fruit = ['pomme','orange','banane','cerise'];
+
+        // Avec une boucle classique
+        for(let i=0;i<fruit.length;i++){
+            console.log(fruit[i]);
+        }
+
+        // avec for of
+        console.log('---------------------------------------------');
+        for (const f of fruit){
+            console.log(f);
+        }
+
+        // avec forEach
+        console.log('---------------------------------------------');  
+        fruit.forEach(function(fruit,key){
+            console.log(key,fruit);
+        })
+ console.log('-------------Fléché---------------------');  
+        // Avec forEach fleché
+
+        fruit.forEach((fruit,key)=>console.log(key,fruit));
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legumes</title>
+</head>
+<body>
+    <script>
+        let legumes = ['carotte','poivron','tomate','navet','comcombre'];
+
+        //Parcours for classique
+
+        for(let i=0;i<legumes.length;i++){
+            console.log(legumes[i]);
+        }
+
+        //parcours for OF
+
+        console.log ('--------------------for of------------');
+        for (const l of legumes){
+            console.log(l);
+        }
+
+        // Parcours forEach
+        console.log('-------------------forEach');
+        legumes.forEach((legumes,k)=>console.log(k,legumes));
+
+        // Ajout Champignon
+        legumes.push('Champignon');
+
+        // Ajout Courge
+        legumes.unshift('Courge');
+
+        // Supprimer dernière element du tableau
+        legumes.pop();
+
+        //Supprimer premier element du tableau 
+        legumes.shift();
+
+        // Ajouter courgette
+        legumes.unshift('courgette');
+
+        let football = prompt('Entrez des footbaulleur séparé par des virgules');
+        console.log(football.split(','));
+
+    </script>
+</body>
+</html>
