@@ -25,6 +25,32 @@
         }
         let m = s1/t.length;
           console.log(`la moyenne est ${m} `);
+
+
+        let s2 = 0;
+        for(let i = 0;i<t.length;i++){
+            if(t[i]%5===0){
+                s2 = s2+1;
+            }
+        }
+          console.log(`il y a ${s2} nombre multiple de 5 `);
+
+        let s3=0;
+        let t2 = ['a','b','r','i','e','p','o'];
+        for(let i=0;i<t2.length;i++){
+            if((t2[i]==='a')||(t2[i]==='e')||(t2[i]==='i')||(t2[i]==='o')||(t2[i]==='u')||(t2[i]==='y')){
+                 s3 = s3+1;
+            }
+           
+            
+        }
+console.log(`il y a ${s3} voyelles `);
+
+// si p appartient au tableau
+console.log(t2.includes('p'));
+
+//si q appartient au tableau
+console.log(t2.includes('q'));
     </script>
 </body>
 </html>

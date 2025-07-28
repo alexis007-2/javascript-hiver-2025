@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstEpisode= 'Episode 1', secondEpisode='Episode 2',thirdEpisode ='Episode 3';
+
+        let serie = [firstEpisode,secondEpisode,thirdEpisode];
+
+        for(s of serie){
+            console.log(s);
+        }
+        serie.push('episode 4');
+        serie.push('episode 5');
+        serie.unshift('Episode pilote');
+        let numberOfEpisodes = serie.length;
+        serie.pop();
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*1)Utilise .filter() pour créer un nouveau tableau contenant seulement les nombres supérieurs à 1.
+
+2)const notes = [4, 9, 15, 12, 7];
+Crée un tableau qui ne contient que les notes supérieures ou égales à 10.
+
+3)const prenoms = ["Alice", "Bob", "Ali", "Benoit"];
+Crée un tableau contenant seulement les prénoms qui commencent par "A".*/
+
+let t1=[1,0.4,2,0.3,0.23,5];
+let filtre1 =t1.filter((x)=>x>1);
+console.log(filtre1);
+
+let notes = [4, 9, 15, 12, 7];
+let noteSd= notes.filter((x)=>x>=10);
+console.log(noteSd);
+
+let prenoms = ["Alice", "Bob", "Ali","Benoit"];
+let p = prenoms.filter(x=>x.startsWith("A"))
+console.log(p);
+
+    </script>
+</body>
+</html>

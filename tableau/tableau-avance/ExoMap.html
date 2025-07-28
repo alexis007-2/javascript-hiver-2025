@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Exercice 1: Map
+1)Utilise .map() pour créer un nouveau tableau qui contient chaque nombre multiplié par 5.
+2)const mots = ["chat", "chien", "oiseau"];
+Crée un tableau qui contient chaque mot en majuscules.
+3)const prixHT = [10, 20, 30];
+Crée un tableau prixTTC qui contient chaque prix augmenté de 20% (TVA : prix × 1.2).-->
+<script>
+    let tab = [2,4,6,8,10];
+    let res = tab.map((x)=>x*5);
+    console.log(res);
+
+    const mots = ["chat", "chien","oiseau"];    
+    const res2 = mots.map((x)=>x.toUpperCase());
+    console.log(res2);
+
+    const prixHT = [10, 20 ,30];
+    const prixTTC = prixHT.map((x)=>x*1.2);
+    console.log(prixTTC);
+</script>
+</body>
+</html>

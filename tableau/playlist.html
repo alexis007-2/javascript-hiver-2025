@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let playlist = ['Macumba','Demon de minuit','Nuit de folie'];
+        let totalMorceaux=playlist.length;
+        playlist.push('le bal masqué');
+        playlist.push('bad');
+        console.log(playlist);
+        playlist.pop();
+        for(const p of playlist){
+            document.body.innerHTML += p+'<br>';
+        }
+    </script>
+</body>
+</html>
