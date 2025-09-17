@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Query selector</h1>
+    <p>Lorem, ipsum dolor.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil!</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h2> Sous titre 1</h2>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, rem?</p>
+    <h2> Sous titre 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt unde sequi nulla distinctio, voluptatum aliquam ut quasi sed laboriosam error?</p>
+    <script>
+        // Selectionnne le premier et uniquement element h2
+        let h2 = document.querySelector('h2');
+        console.log(h2.innerHTML);
+
+        //Selectionne tous les éléments p sous forme de tableau
+        let p = document.querySelectorAll('p');
+        for(let text of p){
+            console.log(text.innerHTML);
+        }
+    </script>
+</body>
+</html>

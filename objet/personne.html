@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let personne = {
+            prenom:'claude',
+            age:32,
+            ville:'Toulouse',
+            bonjour:function(){
+                console.log('Bonjour '+this.prenom);
+            }
+        };
+        // notation pointé
+        console.log(personne.ville);
+        // notation entre crochet
+        console.log(personne['prenom']);
+        // Ajout d'un nom
+        personne.nom='Dupond';
+        personne.bonjour();
+
+        // boucler sur les propriétés d'un objet
+        Object.keys(personne).forEach(function(k){
+            console.log(`la clé ${k} a pour valeur : ${personne[k]}`);
+        });
+    </script>
+</body>
+</html>

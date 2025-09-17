@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Produit
+        {
+            constructor(nom,reference,prixHt)
+            {
+                this.nom = nom;
+                this.reference = reference;
+                this.prixHt = prixHt;
+            }
+
+            calculerPrixTtc()
+            {
+                return this.prixHt*1.20;
+            }
+        }
+     let p1 = new Produit('frites','123460',1);
+     let prix =p1.calculerPrixTtc();
+     console.log(p1);
+     console.log(prix);
+
+    </script>
+</body>
+</html>

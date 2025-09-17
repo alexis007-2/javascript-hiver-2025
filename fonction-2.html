@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hello()
+        {
+            console.log('hello');
+        }
+        hello();
+
+        function hello2(nom)
+        {
+            console.log('hello '+nom);
+            //console.log(`hello ${nom}`);
+        }
+        hello2('alex');
+
+        function francEnEuro(montant){
+            return montant / 6.55957
+        }
+        let res = francEnEuro(20);
+        console.log(res.toFixed(2));
+    </script>
+</body>
+</html>

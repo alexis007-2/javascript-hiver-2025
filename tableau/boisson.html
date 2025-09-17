@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boisson</title>
+</head>
+<body>
+  <script>
+    let boisson = ['Orangina','Canada Dry','Schweppes','Tropicana'];
+    for(let i = 0;i<boisson.length;i=i+1){
+        console.log(boisson[i]);
+    }
+    // 2ème méthode
+
+    for ( let b of boisson ) {
+        console.log(b);        
+    }
+
+    // Ajouter un element en dernier
+    boisson.push('Joker');
+
+    // Ajouter un élement en premier
+    boisson.unshift('Minute maid');
+
+    // Supprimer le dernier element de la liste
+    boisson.pop();
+
+    // Supprimer le premier element de la liste
+    boisson.shift();
+ 
+    //Ajouter un élement entre canada dry et Schweppes
+    boisson.splice(2,0,'Dr Pepper');
+    console.log(boisson);
+
+  </script>  
+</body>
+</html>

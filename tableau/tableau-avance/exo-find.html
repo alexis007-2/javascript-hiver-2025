@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo Find</title>
+</head>
+<!-- 1)const nombres = [3, 7, 11, 8, 13];
+Utilise .find() pour obtenir le premier nombre pair du tableau.
+2)const prenoms = ["Samir", "Mehdi", "Lila", "Nina"];
+Utilise .find() pour obtenir le premier prénom qui commence par "M" -->
+<body>
+    <script>
+        let nombres = [3, 7, 11, 8, 6, 13];
+        let pair = nombres.find(n => n %2 === 0);
+        console.log(pair);
+        console.log('------------');
+        let prenoms = ["Samir", "Mehdi", "Lila", "Nina", "Mira"];
+        let nom = prenoms.find( m => m.startsWith("M"));
+        console.log(nom);
+    </script>
+</body>
+</html>

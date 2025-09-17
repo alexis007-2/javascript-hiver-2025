@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .vert
+        {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Un titre simple</h1>
+    <h2>Mon sous titre 1</h2>
+    <h2>Mon sous titre 2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, architecto.</p>
+    <div id="madiv">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat fugit nemo ullam amet in. Officiis perferendis velit animi porro voluptatibus temporibus soluta dolore! Quam eveniet minus aperiam facilis accusantium possimus.</div>
+    <script>
+        let h2 = document.querySelectorAll('h2');
+         //ou let h2 = document.getElementsByTagName('h2');
+        for(let h of h2){
+            //console.log(h.innerHTML);
+            h.style.color = 'green';
+            /*ou on cree une classe css dans la balise style et on utilise la fonction classList
+            h.classList.add('vert');*/
+        }
+
+        // Changement du titre h1
+        document.querySelector('h1').innerHTML='Mon super titre';
+
+        // Changement du titre p
+        document.querySelector('p').innerHTML = 'Bonjour le DOM';
+
+        // changement de style pour la div
+        let madiv = document.getElementById('madiv');
+        madiv.style.backgroundColor = 'blue';
+    </script>
+</body>
+</html>

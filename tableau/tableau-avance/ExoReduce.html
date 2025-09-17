@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1)
+        let nombres = [1, 2, 3];
+        let somme = nombres.reduce((s,x)=>s+x,0);
+        console.log(somme);
+
+        //2)
+        let longueurs = [4, 12, 5];
+        let produit = longueurs.reduce((p,x)=>p*x,1);
+        console.log(produit);
+
+        let mots = ["JS", "est", "génial"];
+        let phrase = mots.reduce((s,x)=>s+' '+x);
+        console.log(phrase);
+    </script>
+</body>
+</html>

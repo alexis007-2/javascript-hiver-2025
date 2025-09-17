@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .magenta
+        {
+            color:magenta;
+        }
+
+        .bleu
+        {
+            font-weight: bold;
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <p class="magenta">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+    <p class="magenta">coucou</p>
+    <p id="un">Lorem ipsum dolor sit amet consectetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tenetur tempore dolorem!</p>
+    <script>
+        // Selectionne le paragraphe de classe magenta
+        let magenta = document.getElementsByClassName('magenta');
+        console.log(magenta[0].innerHTML);
+
+        // Selectionne le paragraphe d'id un
+        let un = document.getElementById('un');
+        console.log(un.innerHTML);
+
+        // Ajouter au dernier paragraphe la classe bleu
+        //1) Selection du paragraphe d'id un
+
+        let unbis =document.getElementById('un');
+        // Ajouter une classe css au paragraphe
+        unbis.classList.add('bleu');
+    </script>
+</body>
+</html>

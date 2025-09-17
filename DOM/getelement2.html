@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .occitanie{
+            color : #C1000A;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ville du Languedoc Roussillion</h1>
+    <ul id="ville">
+        <li> Nimes</li>
+        <li> Montpellier</li>
+        <li>Alès</li>
+        <li>Séte</li>
+    </ul>
+    <script>
+        let titre = document.querySelector('h1');
+        // Changer le texte de h1
+        titre.innerHTML = "Ville d'occitanie";
+
+        let ville = document.getElementById("ville");
+        console.log(ville);
+        ville.classList.add('occitanie');
+    </script>
+</body>
+</html>
