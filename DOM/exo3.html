@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Exo dom 2024</h1>
+    <p id="un">Mon téléphone</p>
+    <p id="deux">Magenta</p>
+    <ul>
+      <li>Samsumg</li>
+      <li>Iphone</li>
+      <li>Xiaomi</li>
+    </ul>
+    <aside class="pub">la pub d'avion</aside>
+    <aside class="pub">la pub de rasoir</aside>
+    <script>
+        //1)
+        let ul = document.querySelector('ul');
+        ul.style.fontSize = '40px';
+        ul.style.color = 'blue';
+        //2)
+        let deux = document.getElementById('deux').innerHTML = 'aquablue';
+
+        //3)
+        let h1 =document.querySelector('h1').style.color = 'green';
+        //4)
+
+        document.body.style.backgroundColor = '#8c8c8c';
+        // 5)
+
+        let pub = document.querySelectorAll('aside');
+        pub[0].innerHTML =`<img src="concorde.png" alt="concorde">`;
+        pub[1].innerHTML =`<img src="rasoir.webp" alt="rasoir">`;
+    </script>
+  </body>
+</html>

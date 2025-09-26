@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let image = `<p><img src="concorde.png" alt="concorde"></p>`;
+        let paragraphe = `<p><em>Bonjour le monde</em></p>`;
+        let legume = `<ul>
+            <li>Concombre</li>
+            <li>Carottes</li>
+            <li>Epinard</li>
+            </ul>`;
+        document.body.insertAdjacentHTML('beforeend',image);
+        document.body.insertAdjacentHTML('beforeend',paragraphe);
+        document.body.insertAdjacentHTML('beforeend',legume);
+    </script>
+</body>
+</html>

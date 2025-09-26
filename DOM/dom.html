@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .deux
+        {
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1> Mon super titre</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, voluptas nobis molestiae aut fuga rerum nemo? Deleniti dolore iusto eaque!</p>
+    <p class="un">Lorem, ipsum dolor.</p>
+    <div id="conteneur"></div>
+    <button id="monbouton">Cliquez</button>
+    <script>
+        let p1 = document.querySelector('p');
+        // Changer de style au premier paragraphe pour le mettre en orange
+        //p1.style.color = 'orange';
+
+        // Ajouter une classe au premier paragraphe 1ère méthode
+        //p1.classList.add('deux');
+
+        // Ajouter une classe au premier paragraphe 2ème méthode
+        p1.setAttribute('class','deux');
+
+        // Création d'image
+        let image = `<p><img src="concorde.png" alt="concorde"></p>`;
+        let conteneur= document.getElementById('conteneur');
+        conteneur.innerHTML= image;
+
+        // Bouton
+        let bouton = document.getElementById('monbouton');
+        bouton.addEventListener('click',function(){
+            //Changer le style de h1
+           let h1 = document.querySelector('h1');
+           h1.setAttribute('class','deux');
+        })
+
+    </script>
+</body>
+</html>

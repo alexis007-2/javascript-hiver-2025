@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- beforebegin -->
+<p>
+  <!-- afterbegin -->
+  Salut
+  <br>
+  <!-- beforeend -->
+</p>
+<!-- afterend -->
+ <script>
+    let p = document.querySelector('p');
+
+    // Inserer un element h1 avant p
+    let h1=`<h1> Mon super titre</h1>`;
+    p.insertAdjacentHTML('beforebegin',h1);
+    p.insertAdjacentHTML('beforebegin','<h2>sous titre</h2>');
+
+    //Inserer un élémént span a l' interieur de p toujours en premier
+    let span = `<span>Bienvenue sur ma page</span><br>`;
+    p.insertAdjacentHTML('afterbegin',span);
+    let image = `<img src="concorde.png" alt="concorde"><br>`;
+    p.insertAdjacentHTML('afterbegin',image);
+
+    //Inserer un element span à l' interieur de p avant la balise de fermeture de p
+    p.insertAdjacentHTML('beforeend','<span> test1</span>');
+
+    // Inserer un lien après la balise p 
+    let lien = `<p><a href="http://google.fr">google.fr</a></p>`;
+    p.insertAdjacentHTML('afterend',lien);
+
+ </script>
+</body>
+</html>

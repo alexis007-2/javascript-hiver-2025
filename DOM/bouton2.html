@@ -22,6 +22,13 @@
 
 let texte = document.querySelector('p');
 let bouton = document.getElementById('monbouton');
+bouton.addEventListener('click',function(){
+    // supression de la classe rouge
+    texte.classList.remove('rouge');
+    // ajout de la classe gras
+    texte.classList.add('gras');
+
+})
 
 </script>    
 </body>

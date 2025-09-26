@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="conteneur">
+
+    </div>
+    <button id="monbouton">Cliquez</button>
+    <script>
+        let bouton = document.getElementById("monbouton");
+        bouton.addEventListener('click',function(){
+        let phrase = `<p><img src="juan-les-pins.webp" alt="juan les pins"></p>`;
+        let conteneur = document.getElementById('conteneur');
+        conteneur.innerHTML = phrase;
+        // Pour supprimer le bouton
+        bouton.remove();
+        })
+       
+    </script>
+</body>
+</html>

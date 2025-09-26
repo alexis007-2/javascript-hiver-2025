@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bleu{
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="monbouton">Cliquez</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit qui voluptas alias animi ipsum! Recusandae quaerat omnis excepturi cupiditate suscipit aperiam rem? Molestiae eaque incidunt illum veniam fugiat, esse neque dolor rem amet, quis suscipit hic beatae ipsa sapiente atque magni sunt deserunt? Placeat dolorum assumenda in, consequatur laboriosam aperiam.</p>
+    <script>
+        let bouton = document.getElementById('monbouton');
+        let texte = document.querySelector('p');
+        bouton.addEventListener('click',function(){
+            texte.classList.add('bleu');
+        })
+    </script>
+</body>
+</html>

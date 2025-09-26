@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="monbouton1">Concorde</button>
+    <button id="monbouton2">M6+</button>
+    <script>
+        let p = `<p>lorem .....</p><p>ce que je veux</p>`;
+        // Ajout des paragraphes dans le body comme premiers enfants
+        document.body.insertAdjacentHTML('afterbegin',p);
+        let listeFilm = `<ol>
+            <li>Blues Brothers</li>
+            <li>Terminator 2</li>
+            <li> Les visiteurs</li>
+            <li>Les bronzées</li>
+            <li>Commando</li>
+            </ol>`;
+            // Selectionne tous les paragraphes
+            let pBis = document.querySelectorAll('p');
+            pBis[1].insertAdjacentHTML('afterend',listeFilm);
+            // Creation d'image
+            let image = `<img src="juan-les-pins.webp" alt="Juan les pins">`;
+            pBis[1].insertAdjacentHTML('afterend',image);
+            let lien = `<a href="https://wwww.google.fr">Google.fr</a><br>`;
+            pBis[1].insertAdjacentHTML('afterend',lien);
+            //Accès au bouton
+            let monbouton1 = document.getElementById('monbouton1');
+            // Accès à l'image
+            let monimage = document.querySelector('img');
+            monbouton1.addEventListener('click',function(){
+                monimage.setAttribute('src','concorde.png');
+            })
+            let monbouton2 = document.getElementById('monbouton2');
+            let monlien = document.querySelector('a');
+            monbouton2.addEventListener('click',function(){
+                monlien.setAttribute('href','https://www.m6.fr/')
+                monlien.innerHTML='M6';
+            })
+
+    </script>
+</body>
+</html>

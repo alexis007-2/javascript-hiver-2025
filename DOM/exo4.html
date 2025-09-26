@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <button id="monbouton">Cliquez ici</button>
+     <button id="monbouton2">Ajouter element</button>
+    <script>
+        let ul = document.querySelector('ul');
+        let paragraphe = `<p> Paragraphe ajouté</p>`;
+        let monbouton = document.getElementById('monbouton');
+        monbouton.addEventListener('click',function(){
+            //document.body.innerHTML = paragraphe;
+            document.body.insertAdjacentHTML('afterend',paragraphe);
+        })
+        let monbouton2 = document.getElementById('monbouton2');
+        monbouton2.addEventListener('click',function(){
+            let fruit = prompt('entrez un fruit');
+            ul.insertAdjacentHTML('beforeend',`<li>${fruit}</li>`);
+
+        })
+    </script>
+</body>
+</html>

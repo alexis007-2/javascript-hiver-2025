@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="conteneur">
+
+    </div>
+    <script>
+        let prenom = 'alex';
+        let age = 35;
+        let phrase = `<p> je m' appelle <strong>${prenom}</strong> et j' ai <strong> ${age} </strong> ans`;
+        let conteneur = document.getElementById('conteneur');
+        //conteneur.innerHTML= phrase;
+        // Methode moderne
+        conteneur.insertAdjacentHTML('afterbegin',phrase);
+        
+    </script>
+</body>
+</html>

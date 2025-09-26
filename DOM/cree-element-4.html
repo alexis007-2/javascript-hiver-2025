@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul></ul>
+    <script>
+        let ville = ['antibes','Cannes','Nice','Monaco','Menton'];
+        let monLi = '';
+        for(let v of ville){
+            monLi += `<li>${v}</li>`;
+        }
+        let listeVille = document.querySelector('ul');
+        listeVille.innerHTML = monLi;
+    </script>
+</body>
+</html>
